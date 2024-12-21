@@ -1,3 +1,6 @@
+export type id = string & { __brand: "uuid" };
+
+
 export type ApiResponse<T = any> =
   | {
     status?: "success" | "error"; // Indicates if the operation was successful

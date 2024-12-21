@@ -10,7 +10,7 @@ const assertDatabaseConnectionOk = async ()=> {
   console.log(`Checking database connection...`);
   try {
     await sequelize.authenticate();
-    console.log(process.env);
+    // console.log(process.env);
     // setupAssociations();
     sequelize.sync({ alter: true });
     console.log("Database connection OK!");
